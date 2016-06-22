@@ -2,9 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <title>Zeraventure</title>
+    <link rel="icon" href="icon.png">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/progressbar.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/hover-min.css">
@@ -56,8 +60,31 @@
 <div class="content" id="LeProjet">
     <div class="center">
         <h2>Le Projet</h2>
-        <div class="center-v">
+        <div class="synopsis">
+            <h3>Synopsis</h3>
+            <p> &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet turpis sed urna egestas, at efficitur tellus pulvinar. In diam neque, commodo ut euismod a, placerat sed dui. Maecenas venenatis dolor ac lorem commodo eleifend. Cras finibus erat a neque hendrerit, vitae tempus urna viverra. Donec ipsum dui, facilisis nec accumsan sed, consequat ac mi. Suspendisse et eleifend metus. Etiam hendrerit quam non gravida placerat. Donec pulvinar est a aliquam finibus. Proin eleifend laoreet dui, nec faucibus tellus congue et. Mauris in justo vulputate, congue est eu, pretium ipsum.
         </div>
+        <div class="progressBarContainer">
+            <div class="moteur">
+                <h4>Moteur</h4>
+                <div class="progressCircle" percent="0.8"></div>
+            </div>
+            <div class="scenario">
+                <h4>Scenario</h4>
+                <div class="progressCircle" percent="0.2"></div>
+            </div>
+            <div class="graphique">
+                <h4>Graphismes</h4>
+                <div class="progressCircle" percent="0.1"></div>
+            </div>
+            <div class="musique">
+                <h4>Musique</h4>
+                <div class="progressCircle" percent="0.1"></div>
+            </div>
+        </div>
+        <a class="discover" href="#Equipe">
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </a>
     </div>
     <a class="goToHome" href="#home">
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
@@ -69,6 +96,9 @@
     <div class="center">
         <div class="center-v">
             <h2>L'Equipe</h2>
+            <a class="discover" href="#Videos">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
     <a class="goToHome" href="#home">
@@ -81,6 +111,9 @@
     <div class="center">
         <div class="center-v">
             <h2>Videos</h2>
+            <a class="discover" href="#Contact">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
     <a class="goToHome" href="#home">

@@ -1,11 +1,18 @@
 /* General */
 body{
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     padding: 0px;
     margin: 0px;
     background-color: #040404;
+}
+
+h3{
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.3em;
 }
 
 .content{
@@ -183,18 +190,21 @@ header .center{
 .zera > .first{
     position: relative;
     font-size: 70px;
-    top: 105px;
-    right: 96px;
+    top: 100px;
+    right: 100px;
+    font-weight: bold;
 }
 .zera > .a{
     color:  #23b93c;
     font-size: 140px;
+    font-weight: bold;
 }
 .zera > .second{
     position: relative;
     font-size: 70px;
-    bottom: 102px;
-    left: 186px;
+    bottom: 99px;
+    left: 180px;
+    font-weight: bold;
 }
 /* Discover */
 
@@ -208,4 +218,28 @@ header .center{
 
 .discover:hover{
     top: 15px;
+}
+
+/* Second Content : Le projet */
+
+.synopsis{
+    text-align: justify;
+}
+
+.synopsis > p{
+    font-size: 1.1em;
+}
+
+#LeProjet > .center {
+    max-width: 70%;
+}
+
+.progressBarContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.progressBarContainer > *{
+    width: 200px;
+    display: inline-block;
 }
