@@ -15,6 +15,24 @@ function initProgress(elem){
     return elem;
 }
 
+function toggleMenu(){
+    var nav= $(".MenuNav");
+    var icon =  $("#menu > i");
+    var menu = $("#menu");
+    if(nav.hasClass("navActive")){
+        menu.removeClass("active");
+        nav.removeClass("navActive");
+        icon.removeClass("fa-angle-double-left");
+        icon.addClass("fa-angle-double-right");
+    }
+    else {
+        nav.addClass("navActive");
+        menu.addClass("active");
+        icon.removeClass("fa-angle-double-right");
+        icon.addClass("fa-angle-double-left");
+    }
+}
+
 $(document).ready(function(){
     $( window ).scroll(function() {
         /*var next = $(".active").next();
@@ -23,22 +41,24 @@ $(document).ready(function(){
         */
     });
 
+    var nav= $(".MenuNav");
+
+    $(window).on("click", function(e) {
+        //alert($(nav).css( "left" ));
+        if (
+            nav.hasClass("navActive") &&
+            !$(e.target).hasClass("MenuNav") &&
+            !$(e.target).hasClass("menu")&&
+            !$(e.target).hasClass("menup")&&
+            !$(e.target).hasClass("menui")&&
+            $(nav).css( "left" ) != 0
+        ) {
+            toggleMenu();
+        }
+    });
+
     $("#menu").click(function(){
-        var nav= $(".MenuNav");
-        var icon =  $("#menu > i");
-        var menu = $("#menu");
-        if(nav.hasClass("navActive")){
-            menu.removeClass("active");
-            nav.removeClass("navActive");
-            icon.removeClass("fa-angle-double-left");
-            icon.addClass("fa-angle-double-right");
-        }
-        else {
-            nav.addClass("navActive");
-            menu.addClass("active");
-            icon.removeClass("fa-angle-double-right");
-            icon.addClass("fa-angle-double-left");
-        }
+        toggleMenu();
     });
 
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -84,4 +104,5 @@ $(document).ready(function(){
 
     $('.progressBarContainer').show('slow', function(){
     });
+
 });

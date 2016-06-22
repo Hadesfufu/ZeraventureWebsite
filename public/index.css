@@ -7,7 +7,10 @@ body{
     margin: 0px;
     background-color: #040404;
 }
-
+h2{
+    margin-top: 5vh;
+    font-size: 2.5em;
+}
 h3{
     font-size: 1.5em;
 }
@@ -17,20 +20,16 @@ h4 {
 
 .content{
     margin: 0px;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: visible;
 }
 
 .center{
     max-width: 770px;
     margin: auto;
-    height: 100%;
     display: table;
     text-align: center;
-}
-
-.center > h2{
-    margin-top: 110px;
-    font-size: 40px;
+    min-height: 100vh;
 }
 
 .center-v{
@@ -47,7 +46,7 @@ div.home .center-v > h2{
     text-decoration: none;
     float: right;
     right: 10%;
-    bottom: 15%;
+    bottom: 70px;
     position: relative;
     transition: all 0.5s ease;
 }
@@ -64,7 +63,7 @@ div.home .center-v > h2{
 }
 
 .goToHome:hover{
-    bottom: calc(15% + 10px);
+    bottom: 80px;
 }
 
 /* Header */
@@ -72,7 +71,7 @@ div.home .center-v > h2{
 header{
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .menuContainer{
@@ -127,7 +126,7 @@ header .center{
     z-index: 0;
     position: fixed;
     text-align: center;
-    background-color: #23b93c;
+    background-color: #28d244;
     width: 250px;
     top: 0px;
     left: -250px;
@@ -174,7 +173,7 @@ header .center{
 }
 
 #twitter:hover{
-    color: #23b93c;
+    color: #28d244;
 }
 
 
@@ -183,6 +182,7 @@ header .center{
 .zera{
     position: relative;
     right: 19%;
+    margin-bottom: -50px;
 }
 .zera > *{
     margin: 0px;
@@ -195,7 +195,7 @@ header .center{
     font-weight: bold;
 }
 .zera > .a{
-    color:  #23b93c;
+    color:  #28d244;
     font-size: 140px;
     font-weight: bold;
 }
@@ -237,9 +237,90 @@ header .center{
 .progressBarContainer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .progressBarContainer > *{
     width: 200px;
     display: inline-block;
+}
+
+/* Third Content */
+
+
+#Equipe > .center {
+    min-width: 70%;
+}
+
+#Equipe .peoples{
+    width: 100%;
+}
+
+#Equipe .peoples > .left,  #Equipe .peoples > .right{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: calc(50% - 5px);
+}
+
+#Equipe .peoples > .left .text,  #Equipe .peoples > .right .text{
+    display: inline-block;
+    margin: auto;
+    margin-left: 15px;
+}
+
+#Equipe .peoples > .left p,  #Equipe .peoples > .right p{
+    display: block;
+    margin: 0px;
+    text-align: left;
+}
+
+#Equipe .peoples{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-cropper {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+}
+.image-cropper > img{
+    height: 100%;
+}
+
+#Equipe .member{
+    display: flex;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+#Equipe .name{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+#Equipe .poste{
+    color: #28d244;
+}
+
+#Equipe .description{
+    font-style: italic;
+}
+
+#Equipe .left .member{
+    text-align: left;
+}
+
+#Equipe .right .member{
+    text-align: right;
+}
+
+#Equipe .right{
+    justify-content: flex-end;
 }
