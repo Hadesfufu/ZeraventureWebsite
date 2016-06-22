@@ -1,0 +1,211 @@
+/* General */
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    padding: 0px;
+    margin: 0px;
+    background-color: #040404;
+}
+
+.content{
+    margin: 0px;
+    height: 100vh;
+}
+
+.center{
+    max-width: 770px;
+    margin: auto;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.center > h2{
+    margin-top: 110px;
+    font-size: 40px;
+}
+
+.center-v{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.home .center-v > h2{
+    font-size: 40px;
+}
+
+.goToHome{
+    color: white;
+    text-decoration: none;
+    float: right;
+    right: 10%;
+    bottom: 15%;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.goToHome > p{
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+.goToHome > i{
+    font-size: 1.8em;
+    position: relative;
+    left: 20px;
+}
+
+.goToHome:hover{
+    bottom: calc(15% + 10px);
+}
+
+/* Header */
+/* Menu */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.menuContainer{
+    width: 250px;
+}
+
+#menu{
+    position: relative;
+    left: 0px;
+    margin-top: 50px;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#menu:hover{
+    left: 10px;
+}
+
+#menu.active:hover{
+    left: -10px;
+}
+
+#menu > *{
+    display: inline-block;
+}
+
+#menu > p{
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+#menu > i{
+    font-size: 2em;
+    position: relative;
+    top: 5px;
+}
+
+.menuCenter{
+    width: 90px;
+    margin: auto;
+}
+
+header .center{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.MenuNav{
+    z-index: 0;
+    position: fixed;
+    text-align: center;
+    background-color: #23b93c;
+    width: 250px;
+    top: 0px;
+    left: -250px;
+    height: 100%;
+}
+
+.navActive{
+    left: 0px;
+}
+
+.navContent > *{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.3em;
+    margin: 20px 0px;
+}
+
+.navContent{
+    margin-top: 150px;
+}
+
+.active{
+    display: block;
+}
+
+.MenuNav {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Twitter */
+
+#twitter {
+    color: white;
+    float: right;
+    font-size: 3em;
+    position: relative;
+    top: 42px;
+    right: 5%;
+    padding: 0px;
+    transition: all 1s ease;
+}
+
+#twitter:hover{
+    color: #23b93c;
+}
+
+
+/* First Content */
+/* Title */
+.zera{
+    position: relative;
+    right: 19%;
+}
+.zera > *{
+    margin: 0px;
+}
+.zera > .first{
+    position: relative;
+    font-size: 70px;
+    top: 105px;
+    right: 96px;
+}
+.zera > .a{
+    color:  #23b93c;
+    font-size: 140px;
+}
+.zera > .second{
+    position: relative;
+    font-size: 70px;
+    bottom: 102px;
+    left: 186px;
+}
+/* Discover */
+
+.discover{
+    color: white;
+    position: relative;
+    top: 0px;
+    font-size: 2.2em;
+    transition: all 0.5s ease;
+}
+
+.discover:hover{
+    top: 15px;
+}
